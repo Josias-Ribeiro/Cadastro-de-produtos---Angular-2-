@@ -15,6 +15,15 @@ export class ProductService {
     return this._http.post<Product>(this._baseUrl, product)
   }
 
+  read(): Observable<Product[]>{
+    return this._http.get<Product[]>(this._baseUrl)
+  }
+
+  readById(id: string): Observable<Product>{
+    const url = `${this._baseUrl}/${id}`
+    return this._http.get<Product>(url)
+  }
+
   showMessage(msg: string): void {
     this._snackBar.open(msg, 'X', {
       duration: 3000,

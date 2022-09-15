@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -12,6 +12,7 @@ import { FooterComponent } from './components/template/footer/footer.component';
 import { HeaderComponent } from './components/template/header/header.component';
 
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatTableModule } from '@angular/material/table'
 import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
@@ -23,6 +24,12 @@ import { RedDirective } from './directives/red.directive';
 import { ForDirective } from './directives/for.directive';
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
 import { FormsModule } from '@angular/forms';
+import { ProductReadComponent } from './components/product/product-read/product-read.component';
+
+import localePt from '@angular/common/locales/pt'
+import { registerLocaleData } from '@angular/common';
+
+registerLocaleData(localePt)
 
 @NgModule({
   declarations: [
@@ -35,6 +42,7 @@ import { FormsModule } from '@angular/forms';
     RedDirective,
     ForDirective,
     ProductCreateComponent,
+    ProductReadComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,8 +58,12 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
     MatFormFieldModule,
     MatInputModule,
+    MatTableModule
   ],
-  providers: [],
+  providers: [{
+    provide: LOCALE_ID,
+    useValue: 'pt-BR'
+  }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
