@@ -1,27 +1,29 @@
-# CrudMaterial
+# Título do projeto
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
+Cadastro de produtos usando Angular 
 
-## Development server
+## 🚀 Começando
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Para baixar esse projeto, basta clonar  dar um npm install para instalar as dependências.
 
-## Code scaffolding
+### 📋 Pré-requisitos
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Esse projeto utiliza um backend usando json server. Posteriormente irei subir.
 
-## Build
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## 📦 Desenvolvimento
 
-## Running unit tests
+Foi desenvolvido um CRUD com todas as operações, utilizando o pacote RxJS.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🛠️ Construído com
 
-## Running end-to-end tests
+- Angular
+- Material design
+- RxJs
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## ✒️ Autores
 
-## Further help
+- Esse projeto foi criado a partir do curso do Leonardo Leitão (Coder)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Segue anexo o link para o curso: https://www.cod3r.com.br/courses/take/angular-9-essencial/lessons/11849437-conclusao-do-modulo
